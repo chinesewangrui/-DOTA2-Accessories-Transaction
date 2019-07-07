@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>用户登录</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function login(){
+                var $uname=uname.value;
+                var $upwd=upwd.value;
+                if($uname==""){
+                    s1.innerHTML="用户名不能为空"
+                }
+                if($upwd==""){
+                    s2.innerHTML="密码不能为空"
+                }
+                var xhr=new XMLHttpRequest();
+                xhr.onreadystatechange=function(){
+                    if(xhr.readyState==4&&xhr.status==200){
+                        var result=res.responseText;
+                        if(result=="1"){
+                            alert("登陆成功")
+                        }else{
+                            alert("用户名或密码错误")
+                        }
+                    }
+                }
+                xhr.open("get","/user/login/"+$uname+"&"+$upwd,true);
+                xhr.send();
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            用 户 名：<input type="text" id="uname" placeholder="请输入您的用户名"><span id="s1"></span><br>
+            用户密码：<input type="password" id="upwd" placeholder="请输入您的密码"><span id="s2"></span><br>
+            <button onclick="login()">登录</button>
+        </div>
+    </body>
+</html>
