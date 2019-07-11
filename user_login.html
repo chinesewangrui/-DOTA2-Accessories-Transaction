@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/login.css">
+        <script>
+            var $uname=uname.value;
+            var $upwd=upwd.value;
+            function un(){
+                if(!$uname){
+                    s1.innerHTML="用户名不能为空"
+                    return;
+                }
+            }
+            function up(){
+                if(!upwd){
+                    s2.innerHTML="密码不能为空"
+                    return;
+                }
+            }
+            function userlogin(){
+                var xhr=new XMLHttpRequest();
+                xhr.onreadystatechange=function(){
+                    if(xhr.readyState==4&&xhr.status==200){
+                        result=xhr.responseText;
+                        if(result=="1"){
+                            alert("登录成功")
+                        }else{
+                            alert("登陆失败")
+                        }
+                    }
+                }
+                xhr.open("get","/user/v1/login/"+$uname+"&"+$upwd,true);
+                xhr.send();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="content">
+            <table></table>
+            <div class="black">
+                <table>
+                    <tr>
+                        <td>
+                            <h3>欢迎回家</h3>
+                        </td>
+                        <td align="right">
+                            <a href="user_reg.html">新用户注册</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" id="uname" onblur="un()" placeholder="请输入您的用户名">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <span id="s1"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" id="upwd" onblur="up()" placeholder="请输入您的密码">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <span id="s2"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="lab"><label for="lab">自动登录</label>
+                        </td>
+                        <td align="right">  
+                            <a href="">忘记密码？</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button id="btn" onclick="userlogin()">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
