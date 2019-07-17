@@ -1,0 +1,100 @@
+/*页面布局*/
+.bg{
+	background:#e8e8e8;
+	margin:0 auto;
+}
+*{margin:0;padding:0;}
+a{text-decoration:none;}
+/*header布局*/
+header,nav{
+	width:1104px;
+	margin:15px auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	color:#333;
+}
+#logo span{
+	display:block;
+	text-align:center;
+	font:14px chiller;
+	color:#f0f;
+}
+
+#sear input{
+	width:360px;height:37px;
+	border:1px solid #0aa1ed;
+	
+}
+#sear button{
+	outline:0;
+	border:0;
+	vertical-align:bottom;
+}
+#sear img{
+	margin-top:-2px;
+}
+#user a{
+	color:#333;
+	font:16px "微软雅黑";
+}
+#user img{
+	vertical-align:bottom;
+}
+/*导航栏*/
+nav{
+	justify-content:center;
+}
+nav a{
+	width:400px;height:80px;
+	background-color:#f0f;
+	font:bolder 24px "Microsoft yahei";
+	color:#000;
+	text-align:center;
+	line-height:80px;
+}
+/*aside布局*/
+aside{
+	position:fixed;
+	right:2px;
+	top:50%;
+	width:70px;
+	z-index:999;
+	margin-top:-125px;
+}
+aside ul{
+	list-style:none;
+}
+
+/*footer布局*/
+footer{
+	background:#2c2c2c;
+}
+#detail{
+	width:1297px;
+	margin:0 auto;
+	color:#666;
+	list-style:none;
+	font-size:16px;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	padding:35px 0;
+}
+#detail img{
+	position:relative;
+	left:50px;top:0px;
+}
+#detail h4{
+	color:#fff;
+	margin:15px auto;
+	text-align:center;
+}
+hr{
+	background-image:linear-gradient(to right,#f0f 0%,#00f 50%,#f0f 100%)
+}
+
+
+
+
+
