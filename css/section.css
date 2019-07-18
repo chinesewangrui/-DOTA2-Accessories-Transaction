@@ -1,0 +1,54 @@
+*{margin:0;padding:0}
+#tit1,#tit2,#tit3{
+    width:1200px;height:2rem;
+    margin:0 auto;
+}
+#tit1 h3,#tit2 h3,#tit3 h3{
+    width:230px;height:2rem;
+    float:left;
+    background:#00aeef;
+	text-align:center;
+	line-height:2rem;
+	
+}
+#tit1 a,#tit2 a,#tit3 a{
+    float:right;
+    font:12px;
+	color:#333;
+}
+.np,.hp{
+	width:1200px;
+	margin:0 auto;
+	background:#fff;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+	list-style:none;
+	box-sizing:border-box；
+}
+.np li,.hp li{
+	margin:10px 10px 10px 0;
+}
+.np li img,.hp li img{
+	width:224px;height:140px;
+	
+}
+.np li a,.hp li a{
+	display:block;
+	text-align:center;
+	margin:10px auto;
+	color:#333;
+}
+.np li p,.hp li p{
+	text-align:center;
+	margin:10px auto;
+	color:#f0f;
+}
+#tit4{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+}
+
+
+
