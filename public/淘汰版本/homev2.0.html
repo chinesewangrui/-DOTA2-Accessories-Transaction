@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <!--先导css-->
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <title>DOTA2英雄饰品交易平台、水友交流中心</title>
+    <meta name="description" content="专注于Steam游戏DOTA2饰品交易服务，更专业更便捷更高效的电竞饰品交易平台，同时兼具刀圈爱好者、云玩家交流中心，观战Ti9，为中国健儿加油！CN DOTA,BEST DOTA!">
+    <style>
+        .font24{
+            font-size:24px;
+            font-weight: 200px;
+        }
+        #aside{
+            width:68px;
+            position:fixed;
+            right:50px;
+            top:50%;
+            z-index:999;
+            margin-top:-125px;
+        }
+        .bgblack{
+            background-color: #25292c;
+        }
+    </style>
+</head>
+<body class="bg-light bg-secondary">
+    <div class="container-fluid">
+    <!--页面顶部头信息-->
+    <header class="bg-light px-3 d-flex flex-row justify-content-around">
+        <!--<div class=" mt-2 ">-->
+            <!--<img src="../img/logo1.png" class="rounded float-left" alt=""/>-->
+            <!--<p class="text-center text-primary float-left">刀友圈 <br/>Doter World</p>-->
+        <!--</div>-->
+        <div class="media round p-2">
+            <img src="../img/logo1.png" alt=""/>
+            <div class="media-body ml-3">
+                <h5 class="text-primary">刀友圈</h5>
+                <p class="text-primary"><em>Doter World</em></p>
+            </div>
+        </div>
+        <form action="" class="form-inline">
+            <input type="text" placeholder="请输入您要搜索的内容" class="form-control col-form-label"/>
+            <a href="#" class="btn px-0 "><img src="../img/search.PNG" alt=""/></a>
+        </form>
+        <div class="mt-4">
+            <img src="../img/care1.png" alt="" title="心头所好"/>|
+            <img src="../img/order1.png" alt="" title="私人领地"/>|
+            <img src="../img/shop_car1.png" alt="" title="百宝箱"/>|
+            <a href="#" class="text-secondary" title="新朋友加入">注册</a>|
+            <a href="#" class="text-secondary" title="老朋友回家">登录</a>
+        </div>
+    </header>
+    <!--导航栏-->
+    <!--<nav class="px-3">-->
+        <!--<ul class="list-unstyled row bg-danger d-flex flex-row justify-content-around py-3 mb-0">-->
+            <!--<li class="col-2 h3 text-center"><a href="#" class="text-dark ">首页</a></li>-->
+            <!--<li class="col-2 h3 text-center"><a href="#" class="text-dark ">饰品广场</a></li>-->
+            <!--<li class="col-2 h3 text-center"><a href="#" class="text-dark ">曙光酒馆</a></li>-->
+            <!--<li class="col-2 h3 text-center"><a href="#" class="text-dark ">冰封王座</a></li>-->
+            <!--<li class="col-2 h3 text-center"><a href="#" class="text-dark ">电竞资讯</a></li>-->
+            <!--<li class="col-2 h3 text-center"><a href="#" class="text-dark ">关于我们</a></li>-->
+        <!--</ul>-->
+    <!--</nav>-->
+        <nav>
+            <ul class="nav nav-justified bg-danger p-3 rounded">
+                <li class="nav-item">
+                    <a href="" class="nav-link h2">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link h2">饰品广场</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link h2">曙光酒馆</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link h2">冰封王座</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link h2">电竞资讯</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link h2">关于我们</a>
+                </li>
+            </ul>
+        </nav>
+    <div class="row px-3 ">
+        <!--轮播图-->
+        <div class="carousel" data-ride="carousel" id="lunbo">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#">
+                        <img src="../img/l1.jpg" class="w-100" alt=""/>
+                    </a>
+                </div>
+                <div class="carousel-item ">
+                    <a href="#">
+                        <img src="../img/l2.jpg" class="w-100" alt=""/>
+                    </a>
+                </div>
+                <div class="carousel-item ">
+                    <a href="#">
+                        <img src="../img/l3.jpg" class="w-100" alt=""/>
+                    </a>
+                </div>
+                <div class="carousel-item ">
+                    <a href="#">
+                        <img src="../img/l4.jpg" class="w-100" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <a href="#lunbo" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#lunbo" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <ul class="carousel-indicators">
+                <li data-slide-to="0" data-target="#lunbo" class="active"></li>
+                <li data-slide-to="1" data-target="#lunbo" ></li>
+                <li data-slide-to="2" data-target="#lunbo" ></li>
+                <li data-slide-to="3" data-target="#lunbo" ></li>
+            </ul>
+        </div>
+        <!--消息提示框-->
+        <div class="alert alert-info alert-dismissible w-100 mb-0 ">
+            <span class="close" data-dismiss="alert">&times;</span>
+            <span class="text-danger h5 ">Ti9国际邀请赛将于2019年8月15日在中国上海正式拉开序幕！CN加油！CN DOTA,BEST DOTA!</span>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+    <!--页面主体 商品信息-->
+    <section class="bg-light ">
+        <!--最新上架商品-->
+        <div id="newpro ">
+            <div class="py-4">
+                <button class="btn btn-info float-left btn-lg">最新上架</button>
+                <button class="btn btn-light float-right btn-lg">进入市场</button>
+            </div>
+            <br/>
+            <hr/>
+            <ul class="list-unstyled row ">
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="../img/newproduct/001.png" title="纯正 真神炙剑" class="img-thumbnail" >
+                    <a href="#" class="text-warning font24">纯正 真神炙剑</a>
+                    <p class="text-primary  font24">￥59.00</p>
+                </li>
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="../img/newproduct/002.png" title="铭刻 纯金月陨" class="img-thumbnail">
+                    <a href="#" class="text-warning font24">铭刻 纯金月陨</a>
+                    <p class="text-primary  font24">￥129.00</p>
+                </li>
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="../img/newproduct/003.png" title="凌虐之罩" class="img-thumbnail">
+                    <a href="#" class="text-warning font24">凌虐之罩</a>
+                    <p class="text-primary  font24">￥128.00</p>
+                </li>
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="../img/newproduct/004.png" title="彼岸材枝" class="img-thumbnail">
+                    <a href="#" class="text-warning font24">彼岸材枝</a>
+                    <p class="text-primary  font24">￥89.00</p>
+                </li>
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="../img/newproduct/005.png" title="纯金风暴之诞神令" class="img-thumbnail">
+                    <a href="#" class="text-warning font24">纯金风暴之诞神令</a>
+                    <p class="text-primary  font24">￥128.00</p>
+                </li>
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="../img/newproduct/006.png" title="守夜丰功" class="img-thumbnail">
+                    <a href="#" class="text-warning font24">守夜丰功</a>
+                    <p class="text-primary  font24">￥345.00</p>
+                </li>
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="../img/newproduct/007.png" title="铭刻 噬魔之王" class="img-thumbnail">
+                    <a href="#" class="text-warning font24">铭刻 噬魔之王</a>
+                    <p class="text-primary  font24">￥135.00</p>
+                </li>
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="../img/newproduct/008.png" title="尊享 魔导师密匙" class="img-thumbnail">
+                    <a href="#" class="text-warning font24">尊享 魔导师密匙</a>
+                    <p class="text-primary  font24">￥155.00</p>
+                </li>
+            </ul>
+        </div>
+        <hr/>
+        <!--热销商品-->
+        <div id="hotpro ">
+            <div class="pb-4">
+                <button class="btn btn-info float-left btn-lg">热销商品</button>
+                <button class="btn btn-light float-right btn-lg">进入市场</button>
+            </div>
+            <br/>
+            <hr/>
+        <ul class="list-unstyled row">
+            <li class="col-lg-3 col-md-6 col-sm-12">
+                <img src="../img/hotproduct/h1.png" title="纯金食腐婪虫" class="img-thumbnail">
+                <a href="#" class="text-danger font24">纯金食腐婪虫</a>
+                <p class="text-primary  font24">￥79.00</p>
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-12">
+                <img src="../img/hotproduct/h2.png" title="铭刻 雪女冰川" class="img-thumbnail">
+                <a href="#" class="text-danger font24">铭刻 雪女冰川</a>
+                <p class="text-primary  font24">￥8.46</p>
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-12">
+                <img src="../img/newproduct/003.png" title="凌虐之罩" class="img-thumbnail">
+                <a href="#" class="text-danger font24">凌虐之罩</a>
+                <p class="text-primary  font24">￥54.99</p>
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-12">
+                <img src="../img/hotproduct/h3.png" title="破晓之翼" class="img-thumbnail">
+                <a href="#" class="text-danger font24">破晓之翼</a>
+                <p>￥5.00</p>
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-12">
+                <img src="../img/hotproduct/h4.png" title="魔方之谜" class="img-thumbnail">
+                <a href="#" class="text-danger font24">魔方之谜</a>
+                <p class="text-primary  font24">￥2.50</p>
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-12">
+                <img src="../img/hotproduct/h6.png" title="2017年不朽宝藏" class="img-thumbnail">
+                <a href="#" class="text-danger font24">2017年不朽宝藏</a>
+                <p class="text-primary  font24">￥0.45</p>
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-12">
+                <img src="../img/hotproduct/h7.png" title="金姝之匕" class="img-thumbnail">
+                <a href="#" class="text-danger font24">金姝之匕</a>
+                <p class="text-primary  font24">￥0.02</p>
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-12">
+                <img src="../img/hotproduct/h8.png" title="新月战刃" class="img-thumbnail">
+                <a href="#" class="text-danger font24">新月战刃</a>
+                <p class="text-primary  font24">￥0.02</p>
+            </li>
+        </ul>
+        </div>
+        <hr/>
+        <!--团购活动-->
+        <div id="groupbuy">
+            <div class="pb-4">
+                <botton class="btn btn-warning float-left btn-lg">热门团购</botton>
+                <botton class="btn btn-light float-right btn-lg">进入市场</botton>
+            </div>
+            <br/>
+            <hr/>
+            <div>
+                <img src="../img/shouqing.png" class="w-100"/>
+            </div>
+        </div>
+    </section>
+    <!--侧边栏-->
+    <aside id="aside">
+       <ul class="list-unstyled">
+           <li class="mb-2">
+               <a href="#">
+                   <img src="../img/vip.PNG" alt="" title="充值让你更前大"/>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="../img/app.PNG" alt="" title="随身商城"/>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="../img/qq.PNG" alt="" title="在线沟通"/>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="../img/gzh.PNG" alt="" title="关注我们"/>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="../img/help.PNG" alt="" title="Can I Help You?"/>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="../img/kefu.PNG" alt="" title="小姐姐等你呦！"/>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <img src="../img/up.PNG" alt="" title="You Will Be Back!"/>
+               </a>
+           </li>
+       </ul>
+    </aside>
+</div>
+<!--页面底部 变宽容器-->
+    <div class="container-fluid">
+    <footer class="bgblack mt-2 pb-5">
+        <!--底部part1-->
+        <div class="d-flex flex-row justify-content-center pt-5 pb-2">
+            <div class="mx-5 text-center">
+                <img src="../img/footer/footer1.PNG" alt="" class=""/>
+                <h4 class="text-white my-3">VIP会员服务</h4>
+                <p class="text-secondary">专享0元网络服务器</p>
+            </div>
+            <div class="mx-5 text-center">
+                <img src="../img/footer/footer2.PNG" alt=""/>
+                <h4 class="text-white my-3">团购优惠</h4>
+                <p class="text-secondary">特有团购享更多实惠</p>
+            </div>
+            <div class="mx-5 text-center">
+                <img src="../img/footer/footer3.PNG" alt=""/>
+                <h4 class="text-white my-3">安全便捷</h4>
+                <p class="text-secondary">买家首发无需存入取回</p>
+            </div>
+            <div class="mx-5 text-center">
+                <img src="../img/footer/footer4.PNG" alt=""/>
+                <h4 class="text-white my-3">专属客服</h4>
+                <p class="text-secondary">7*24小时专有服务</p>
+            </div>
+        </div>
+        <hr/>
+        <!--底部part1  提示信息-->
+        <div class="d-flex flex-row justify-content-center pt-3 ">
+            <div class="text-center px-5">
+                <h6 class="text-white">新手入门</h6>
+                <a href="#" class="d-block text-secondary">使用指南</a>
+                <a href="#" class="d-block text-secondary">STEAM相关</a>
+                <a href="#" class="d-block text-secondary">交易防骗说明</a>
+            </div>
+            <div class="text-center px-5">
+                <h6 class="text-white">买卖交易</h6>
+                <a href="#" class="d-block text-secondary">上架发布</a>
+                <a href="#" class="d-block text-secondary">下单购买</a>
+                <a href="#" class="d-block text-secondary">团购交易</a>
+            </div>
+            <div class="text-center px-5">
+                <h6 class="text-white">钱包相关</h6>
+                <a href="#" class="d-block text-secondary">网络服务费标准</a>
+                <a href="#" class="d-block text-secondary">充值提现</a>
+            </div>
+            <div class="text-center px-5">
+                <h6 class="text-white">支付方式</h6>
+                <a href="#" class="d-block text-secondary">微信</a>
+                <a href="#" class="d-block text-secondary">银联</a>
+            </div>
+            <div class="text-center px-5">
+                <h6 class="text-white">公众号</h6>
+                <img src="../img/footer/gzh.PNG" alt=""/>
+            </div>
+        </div>
+        <!--底部part3-->
+        <div class="d-flex flex-row justify-content-center">
+            <p class="px-3">
+                <a href="#" class="text-secondary">关于我们</a>
+            </p>
+            <p class="px-3">
+                <a href="#" class="text-secondary">商务合作</a>
+            </p>
+            <p class="px-3">
+                <a href="#" class="text-secondary">家长监护</a>
+            </p>
+            <p class="px-3">
+                <a href="#" class="text-secondary">用户协议</a>
+            </p>
+            <p class="px-3">
+                <a href="#" class="text-secondary">隐私政策</a>
+            </p>
+        </div>
+        <!--底部part3-->
+        <div class="text-center text-secondary pb-5">
+            Copyright©2019 Dote2云网友娱乐中心  Doter小世界
+        </div>
+    </footer>
+</div>
+</body>
+</html>

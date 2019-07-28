@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DOCUMENT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+					.box{
+						width:500px;height:500px;
+						margin:100px auto;
+						animation:jump 1s infinite;
+						animation-direction:alternate;
+						transition:1s;
+					}
+					.cir1,.cir2,.squ{
+						width:250px;height:250px;
+						background:#f00;
+						border-radius:50%;
+						float:left;
+						position:absolute;
+					}
+					.cir2{
+						margin-left:155px;
+					}
+					.squ{
+						border-radius:0;
+						margin-top:76px;
+						margin-left:78px;
+						transform:rotateZ(45deg);
+					}
+					@keyframes jump{
+						from{
+							transform:scale(0.6)
+						}
+						to{
+							transform:scale(1)
+						}
+					}
+				</style>
+    </head>
+    <body>
+        <div class="box">
+        	<div class="cir1"></div>
+        	<div class="cir2"></div>
+        	<div class="squ"></div>
+        </div>
+    </body>
+</html>

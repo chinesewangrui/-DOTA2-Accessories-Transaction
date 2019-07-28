@@ -1,0 +1,19 @@
+
+.breadcrumb{
+    background:#f5f5f5;
+}
+.input-group {
+    align-items: center;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "|";
+    align-items: center;
+}
+.nav .nav-link:hover{
+    background-color:#0aa1ed;
+    border-radius:0.25rem;
+    transition: all 250ms linear;
+}
+.bgblack{
+    background-color: #25292c;
+}

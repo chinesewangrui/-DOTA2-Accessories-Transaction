@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <!--先导css-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/comm.css"/>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/ajax.js"></script>
+    <title>DOTA2英雄饰品交易平台、水友交流中心</title>
+    <meta name="description" content="专注于Steam游戏DOTA2饰品交易服务，更专业更便捷更高效的电竞饰品交易平台，同时兼具刀圈爱好者、云玩家交流中心，观战Ti9，为中国健儿加油！CN DOTA,BEST DOTA!">
+</head>
+<body>
+    <div class="container-fluid">
+        <!--引入页面顶部-->
+        <header>
+            <iframe src="header.html" frameborder="0" class="my_header" scrolling="no"></iframe>
+        </header>
+        <!--轮播图-->
+        <nav>
+            <!--轮播图-->
+            <div class="carousel" data-ride="carousel" id="banner">
+                <!-- 轮播图图片 -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#">
+                            <img src="../img/l1.jpg" alt="至宝召集令" class="w-100">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img src="../img/l2.jpg" alt="" class="w-100">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img src="../img/l3.jpg" alt="" class="w-100">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img src="../img/l4.jpg" alt="" class="w-100">
+                        </a>
+                    </div>
+                </div>
+                <!-- 左右箭头 -->
+                <a href="#banner" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#banner" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <!-- 轮播指示器 -->
+                <ul class="carousel-indicators">
+                    <li data-slide-to="0" data-target="#banner" class="active"></li>
+                    <li data-slide-to="1" data-target="#banner" ></li>
+                    <li data-slide-to="2" data-target="#banner" ></li>
+                    <li data-slide-to="3" data-target="#banner" ></li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <!--页面主题-->
+        <section >
+            <div class="row mx-0">
+                <div class="col-lg-9 col-sm-12 px-0">
+                    <!--最新上架-->
+                    <!--首页推荐文字行-->
+                    <div class="d-flex justify-content-between bg_grey border-bottom border-primary pt-3 rounded">
+                        <button class="btn my_new_btn btn-lg ">最新上架</button>
+                        <a href="#" class="text-muted p-2">进入市场</a>
+                    </div>
+                    <!--商品列表-->
+                    <div class="row mx-0">
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center mr-lg-1">
+                                <a href="">
+                                    <img src="../img/newproduct/001.png" alt="纯正 真神炙剑" title="纯正 真神炙剑" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">纯正 真神炙剑 </a>
+                                <div class="d-flex justify-content-around">
+                                <p class="price mt-2 ">￥59.00</p>
+                                <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">                             <div class="bg-white my-3 text-center mr-lg-1">
+                                <a href="">
+                                    <img src="../img/newproduct/002.png" alt="铭刻 纯金月陨" title="铭刻 纯金月陨" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">铭刻 纯金月陨</a>
+                                <div class="d-flex justify-content-around">
+                                    <p class="price mt-2 ">￥129.00</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">                             <div class="bg-white my-3 text-center mr-lg-1">
+                                <a href="">
+                                    <img src="../img/newproduct/006.png" alt="守夜丰功" title="守夜丰功" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">守夜丰功</a>
+                                <div class="d-flex justify-content-around">
+                                    <p class="price mt-2 ">￥345.00</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">                             <div class="bg-white my-3 text-center ">
+                                <a href="">
+                                    <img src="../img/newproduct/003.png" alt="凌虐之罩" title="凌虐之罩" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">凌虐之罩</a>
+                                <div class="d-flex justify-content-around">
+                                    <p class="price mt-2 ">￥128.00</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">                             <div class="bg-white my-3 text-center mr-lg-1">
+                                <a href="">
+                                    <img src="../img/newproduct/007.png" alt="铭刻 噬魔之王" title="铭刻 噬魔之王" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">铭刻 噬魔之王</a>
+                                <div class="d-flex justify-content-around">
+                                    <p class="price mt-2 ">￥135.00</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">                             <div class="bg-white my-3 text-center mr-lg-1">
+                                <a href="">
+                                    <img src="../img/newproduct/004.png" alt="彼岸材枝" title="彼岸材枝" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">彼岸材枝</a>
+                                <div class="d-flex justify-content-around">
+                                    <p class="price mt-2 ">￥89.00</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">                             <div class="bg-white my-3 text-center mr-lg-1">
+                                <a href="">
+                                    <img src="../img/newproduct/008.png" alt="尊享 魔导师密匙" title="尊享 魔导师密匙" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">尊享 魔导师密匙</a>
+                                <div class="d-flex justify-content-around">
+                                    <p class="price mt-2 ">￥155.00</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">                             <div class="bg-white my-3 text-center ">
+                                <a href="">
+                                    <img src="../img/newproduct/005.png" alt="纯金风暴之诞神令" title="纯金风暴之诞神令" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">纯金风暴之诞神令</a>
+                                <div class="d-flex justify-content-around">
+                                    <p class="price mt-2 ">￥129.00</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">                             <div class="bg-white my-3 text-center mr-lg-1">
+                                <a href="">
+                                    <img src="../img/newproduct/009.png" alt="铭刻 万世权杖" title="铭刻 万世权杖" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">铭刻 万世权杖</a>
+                                <div class="d-flex justify-content-around">
+                                    <p class="price mt-2 ">￥1998.00</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">                             <div class="bg-white my-3 text-center mr-lg-1">
+                                <a href="">
+                                    <img src="../img/newproduct/10.png" alt="大圣的新游记" title="大圣的新游记" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">大圣的新游记</a>
+                                <div class="d-flex justify-content-around">
+                                    <p class="price mt-2 ">￥59.00</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">                             <div class="bg-white my-3 text-center mr-lg-1">
+                                <a href="">
+                                    <img src="../img/newproduct/11.png" alt="至刚炎铠" title="至刚炎铠" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">至刚炎铠</a>
+                                <div class="d-flex justify-content-around">
+                                    <p class="price mt-2 ">￥70.00</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">                             <div class="bg-white my-3 text-center">
+                                <a href="">
+                                    <img src="../img/newproduct/12.png" alt="暗黑奇艺披风" title="暗黑奇艺披风" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">暗黑奇艺披风</a>
+                                <div class="d-flex justify-content-around">
+                                    <p class="price mt-2 ">￥1150.00</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-1">了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热销商品-->
+                    <!--热销商品文字行  -->
+                    <div class="d-flex justify-content-between bg_grey border-bottom border-primary pt-3 rounded">
+                        <button class="btn my_hot_btn btn-lg ">热销饰品</button>
+                        <a href="#" class="text-muted p-2">进入市场</a>
+                    </div>
+                    <!--商品列表-->
+                    <div class="row mx-0">
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center mr-1">
+                                <a href="">
+                                    <img src="../img/hotproduct/h1.png" alt="纯金食腐婪虫" title="纯金食腐婪虫" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">纯金食腐婪虫</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥79.00</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="11" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center mr-1">
+                                <a href="">
+                                    <img src="../img/hotproduct/h2.png" alt="铭刻 雪女冰川" title="铭刻 雪女冰川" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">铭刻 雪女冰川</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥8.46</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="5" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center mr-1">
+                                <a href="">
+                                    <img src="../img/hotproduct/h10.png" alt="铭刻 苦木独苗" title="铭刻 苦木独苗" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">铭刻 苦木独苗</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥4.80</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="18" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center ">
+                                <a href="">
+                                    <img src="../img/hotproduct/h11.png" alt="铭刻 苦木独苗" title="剑心之遗捆绑包" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">剑心之遗捆绑包</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥151.00</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="52" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center mr-1">
+                                <a href="">
+                                    <img src="../img/hotproduct/h3.png" alt="破晓之翼" title="破晓之翼" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">破晓之翼</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥5.00</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="30" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center mr-1">
+                                <a href="">
+                                    <img src="../img/hotproduct/h4.png" alt="魔方之谜" title="魔方之谜" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">魔方之谜</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥2.50</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="18" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center mr-1">
+                                <a href="">
+                                    <img src="../img/hotproduct/h5.png" alt="观战：" title="观战：" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">观战：</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥2.01</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="88" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center ">
+                                <a href="">
+                                    <img src="../img/hotproduct/h6.png" alt="2017年不朽宝藏" title="2017年不朽宝藏" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">2017年不朽宝藏</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥0.45</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="255" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center mr-1">
+                                <a href="">
+                                    <img src="../img/hotproduct/h7.png" alt="金姝之匕" title="金姝之匕" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">金姝之匕</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥0.02</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="517" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center mr-1">
+                                <a href="">
+                                    <img src="../img/hotproduct/h9.png" alt="纯正 小飞龙" title="纯正 小飞龙" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">纯正 小飞龙</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥1.19</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="28" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center mr-1">
+                                <a href="">
+                                    <img src="../img/hotproduct/h12.png" alt="尊享 擎天大圣" title="尊享 擎天大圣" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">尊享 擎天大圣</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥147.5</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="1" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12   px-0  ">
+                            <div class="bg-white my-3 text-center">
+                                <a href="">
+                                    <img src="../img/hotproduct/h8.png" alt="新月战刃" title="新月战刃" class="w-100 my_img_tran p-1 img-thumbnail"/>
+                                </a>
+                                <a href="#" class="my_a py-3 d-block border-bottom">新月战刃</a>
+                                <div class="d-flex justify-content-around pt-3">
+                                    <p class="price ">￥1.02</p>
+                                    <span>交易量:</span>
+                                    <input type="text" value="17" class="border-0 text-center pb-3 input_num"/>
+                                    <span>件</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--团购优惠-->
+                    <!--团购优惠文字行-->
+                    <div class="d-flex justify-content-between bg_grey border-bottom border-primary pt-3 rounded">
+                        <button class="btn my_gro_btn btn-lg ">团购优惠</button>
+                        <a href="#" class="text-muted p-2">进入市场</a>
+                    </div>
+                    <!--优惠列表-->
+                    <img src="../img/shouqing.png" alt="" class="w-100"/>
+                </div>
+                <!--商品主页侧边栏-->
+                <div class="col-lg-3 col-sm-12 pr-0">
+                    <!--标题栏-->
+                    <div class="d-flex justify-content-between bg_grey border-bottom border-primary pt-3 rounded">
+                        <button class="btn btn-primary btn-lg ">电竞资讯</button>
+                        <a href="#" class="text-muted p-2">了解更多</a>
+                    </div>
+                    <!--信息框-->
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex flex-column  p-2 border-bottom bg-dark">
+                            <a href="https://www.dota2.com.cn/article/details/20190721/206101.html" class="text-light input-group-text text-truncate my_text-decoration d-block border-0 bg-transparent"  target="_blank" title="典藏宝瓶Ⅱ+祈求者身心——TI9总奖金突破3000万美元的秘密">
+                                典藏宝瓶Ⅱ+祈求者身心——TI9总奖金突破3000万美元的秘密
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex flex-column  p-2 border-bottom bg-dark">
+                            <a href="https://www.dota2.com.cn/article/details/20190727/206431.html" class="text-light input-group-text text-truncate my_text-decoration d-block border-0 bg-transparent"  target="_blank" title="TI冠军+明星解说430、Faith_bian、Dove、AA亮相Chinajoy DOTA2展台">
+                                TI冠军+明星解说430、Faith_bian、Dove、AA亮相Chinajoy DOTA2展台
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex flex-column  p-2 border-bottom bg-dark">
+                            <a href="https://www.dota2.com.cn/article/details/20190726/206381.html" class="text-light input-group-text text-truncate my_text-decoration d-block border-0 bg-transparent"  target="_blank" title="见证不朽 2019DOTA2国际邀请赛开幕式玩家招募限时开启">
+                                见证不朽 2019DOTA2国际邀请赛开幕式玩家招募限时开启
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex flex-column  p-2 border-bottom bg-dark">
+                            <a href="http://baijiahao.baidu.com/s?id=1640201305196699503&wfr=spider&for=pc" class="text-light input-group-text text-truncate my_text-decoration d-block border-0 bg-transparent"  target="_blank" title="DOTA2：Pis再次怒喷国服高分“演员”！这次的演员学会了贼喊捉贼">
+                                DOTA2：Pis再次怒喷国服高分“演员”！这次的演员学会了贼喊捉贼
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex flex-column  p-2 border-bottom bg-dark">
+                            <a href="http://fight.pcgames.com.cn/750/7500975.html" class="text-light input-group-text text-truncate my_text-decoration d-block border-0 bg-transparent"  target="_blank" title="TI9 中国军团再添一员，Newbee获财团支持收购FWD！">
+                                TI9 中国军团再添一员，Newbee获财团支持收购FWD！
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex flex-column  p-2 border-bottom bg-dark">
+                            <a href="http://fight.pcgames.com.cn/750/7500913.html" class="text-light input-group-text text-truncate my_text-decoration d-block border-0 bg-transparent"  target="_blank" title="TI9原创作品征集大赛内容推荐第六弹：我的青春，都献给了刀塔">
+                                TI9原创作品征集大赛内容推荐第六弹：我的青春，都献给了刀塔
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex flex-column  p-2 border-bottom bg-dark">
+                            <a href="http://dota2.uuu9.com/" class="text-light input-group-text text-truncate my_text-decoration d-block border-0 bg-transparent"  target="_blank" title="DOTA2_DOTA2直播_刀塔2比赛视频_游久电竞">
+                                DOTA2_DOTA2直播_刀塔2比赛视频_游久电竞
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid">
+        <!-- 引入帮助栏 -->
+        <!--侧边帮助栏-->
+    <aside id="aside">
+            <ul class="list-unstyled list-group ">
+                <li class="list-group-item p-0">
+                    <a href="#">
+                        <img src="../img/ic-vip.png" alt="" class="w-100">
+                    </a>
+                </li>
+                <li class="list-group-item p-0">
+                    <a href="#">
+                        <img src="../img/app.PNG" alt="" class="w-100">
+                    </a>
+                </li>
+                <li class="list-group-item p-0">
+                    <a href="#">
+                        <img src="../img/qq.PNG" alt="" class="w-100">
+                    </a>
+                </li>
+                <li class="list-group-item p-0">
+                    <a href="#">
+                        <img src="../img/gzh.PNG" alt="" class="w-100">
+                    </a>
+                </li>
+                <li class="list-group-item p-0">
+                    <a href="#">
+                        <img src="../img/help.PNG" alt="" class="w-100">
+                    </a>
+                </li>
+                <li class="list-group-item p-0">
+                    <a href="#">
+                        <img src="../img/kefu.PNG" alt="" class="w-100">
+                    </a>
+                </li>
+                <li class="list-group-item p-0">
+                    <a href="#">
+                        <img src="../img/up.PNG" alt="" class="w-100">
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!--引入页面底部-->
+        <footer>
+            <iframe src="footer.html" frameborder="0" class="my_footer" scrolling="no"></iframe>
+        </footer>
+    </div>
+</body>
+</html>

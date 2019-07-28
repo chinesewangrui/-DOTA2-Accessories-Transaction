@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <!--先导css-->
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <title>刀友圈泉水基地</title>
+    <style>
+        #login{
+            width:100%;
+            height:800px;
+            background: url('../img/bg1.PNG') no-repeat fixed center center ;
+            background-size:cover;
+            position:relative;
+        }
+        #loginview{
+            width:20%;height:45%;
+            margin:0 auto;
+            position:absolute;
+            top:25%;left:70%;
+            background-image:linear-gradient(to right,rgba(208,16,200,0.2),rgba(255,255,200,0.6));
+        }
+        .bgblack{
+            background-color: #25292c;
+        }
+    </style>
+</head>
+<body >
+    <div class="container-fluid">
+        <!--页面顶部头信息-->
+        <header class="bg-light px-3 d-flex flex-row justify-content-around">
+            <div class=" mt-2 ">
+                <img src="../img/logo1.png" class="rounded float-left" alt=""/>
+                <p class="text-center text-primary float-left">刀友圈 <br/>Doter World</p>
+            </div>
+            <form action="" class="form-inline">
+                <input type="text" placeholder="请输入您要搜索的内容" class="form-control col-form-label"/>
+                <a href="#" class="btn px-0 "><img src="../img/search.PNG" alt=""/></a>
+            </form>
+            <div class="mt-4">
+                <img src="../img/care1.png" alt="" title="心头所好"/>|
+                <img src="../img/order1.png" alt="" title="私人领地"/>|
+                <img src="../img/shop_car1.png" alt="" title="百宝箱"/>|
+                <a href="#" class="text-secondary" title="新朋友加入">注册</a>|
+                <a href="#" class="text-secondary" title="老朋友回家">登录</a>
+            </div>
+        </header>
+        <!--导航栏-->
+        <nav class="px-3">
+            <ul class="list-unstyled row bg-info d-flex flex-row justify-content-around py-3 mb-0">
+                <li class="col-2 h3 text-center"><a href="#" class="text-dark ">首页</a></li>
+                <li class="col-2 h3 text-center"><a href="#" class="text-dark ">饰品广场</a></li>
+                <li class="col-2 h3 text-center"><a href="#" class="text-dark ">曙光酒馆</a></li>
+                <li class="col-2 h3 text-center"><a href="#" class="text-dark ">冰封王座</a></li>
+                <li class="col-2 h3 text-center"><a href="#" class="text-dark ">电竞资讯</a></li>
+                <li class="col-2 h3 text-center"><a href="#" class="text-dark ">关于我们</a></li>
+            </ul>
+        </nav>
+        <!--登录界面-->
+        <section id="login">
+            <div id="loginview">
+                <div class="row p-0 pl-3">
+                    <h3 class="col-7 text-light text-left pt-3 ">欢迎指挥官</h3>
+                    <a href="#" title="新用户注册"  class="col-5 h5 text-danger text-center pt-4 ">英雄降临</a>
+                </div>
+                <hr style="filter: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#987cb9 size=3>
+
+                <form action="" class="form-inline text-center">
+                    <input type="text" id="uname" placeholder="请输入您的名号" onblur="getUname()" class="form-control col-form-label form-text ml-4 w-75"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/yhm.png" alt=""/>
+                </form>
+                <p id="unametest"></p>
+                <form action="" class="form-inline ">
+                    <input type="password" id="upwd" placeholder="请输入您的密码" class="form-control col-form-label form-text ml-4 w-75"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/mm.png" alt=""/>
+                </form>
+                <form action="" class="mt-4 form-check">
+                    <input type="checkbox" class=" float-check-input mr-1 " id="zdlogin"/><label for="zdlogin" class="text-light">自动登录</label>
+                    <a href="#" class="float-right mr-4 text-light">忘记密码?</a>
+                </form>
+                <div class="text-center">
+                    <a onclick="login()" class="btn btn-primary  w-100 mt-4">登&nbsp;&nbsp;&nbsp;录</a>
+                </div>
+            </div>
+        </section>
+        <!--页面底部 -->
+            <footer class="bgblack  pb-5">
+                <!--底部part1-->
+                <div class="d-flex flex-row justify-content-center pt-5 pb-2">
+                    <div class="mx-5 text-center">
+                        <img src="../img/footer/footer1.PNG" alt="" class=""/>
+                        <h4 class="text-white my-3">VIP会员服务</h4>
+                        <p class="text-secondary">专享0元网络服务器</p>
+                    </div>
+                    <div class="mx-5 text-center">
+                        <img src="../img/footer/footer2.PNG" alt=""/>
+                        <h4 class="text-white my-3">团购优惠</h4>
+                        <p class="text-secondary">特有团购享更多实惠</p>
+                    </div>
+                    <div class="mx-5 text-center">
+                        <img src="../img/footer/footer3.PNG" alt=""/>
+                        <h4 class="text-white my-3">安全便捷</h4>
+                        <p class="text-secondary">买家首发无需存入取回</p>
+                    </div>
+                    <div class="mx-5 text-center">
+                        <img src="../img/footer/footer4.PNG" alt=""/>
+                        <h4 class="text-white my-3">专属客服</h4>
+                        <p class="text-secondary">7*24小时专有服务</p>
+                    </div>
+                </div>
+                <hr/>
+                <!--底部part1  提示信息-->
+                <div class="d-flex flex-row justify-content-center pt-3 ">
+                    <div class="text-center px-5">
+                        <h6 class="text-white">新手入门</h6>
+                        <a href="#" class="d-block text-secondary">使用指南</a>
+                        <a href="#" class="d-block text-secondary">STEAM相关</a>
+                        <a href="#" class="d-block text-secondary">交易防骗说明</a>
+                    </div>
+                    <div class="text-center px-5">
+                        <h6 class="text-white">买卖交易</h6>
+                        <a href="#" class="d-block text-secondary">上架发布</a>
+                        <a href="#" class="d-block text-secondary">下单购买</a>
+                        <a href="#" class="d-block text-secondary">团购交易</a>
+                    </div>
+                    <div class="text-center px-5">
+                        <h6 class="text-white">钱包相关</h6>
+                        <a href="#" class="d-block text-secondary">网络服务费标准</a>
+                        <a href="#" class="d-block text-secondary">充值提现</a>
+                    </div>
+                    <div class="text-center px-5">
+                        <h6 class="text-white">支付方式</h6>
+                        <a href="#" class="d-block text-secondary">微信</a>
+                        <a href="#" class="d-block text-secondary">银联</a>
+                    </div>
+                    <div class="text-center px-5">
+                        <h6 class="text-white">公众号</h6>
+                        <img src="../img/footer/gzh.PNG" alt=""/>
+                    </div>
+                </div>
+                <!--底部part3-->
+                <div class="d-flex flex-row justify-content-center">
+                    <p class="px-3">
+                        <a href="#" class="text-secondary">关于我们</a>
+                    </p>
+                    <p class="px-3">
+                        <a href="#" class="text-secondary">商务合作</a>
+                    </p>
+                    <p class="px-3">
+                        <a href="#" class="text-secondary">家长监护</a>
+                    </p>
+                    <p class="px-3">
+                        <a href="#" class="text-secondary">用户协议</a>
+                    </p>
+                    <p class="px-3">
+                        <a href="#" class="text-secondary">隐私政策</a>
+                    </p>
+                </div>
+                <!--底部part3-->
+                <div class="text-center text-secondary pb-5">
+                    Copyright©2019 Dote2云网友娱乐中心  Doter小世界
+                </div>
+            </footer>
+    </div>
+    <script>
+        function getUname(){
+            var $uname=uname.value;
+            if(!$uname){
+                unametest.innerHTML="指挥官阁下需要通行证";
+                return;
+            }
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4&&xhr.status==200){
+                    var result=xhr.responseText;
+                    if(result=="1"){
+                        unametest.innerHTML="指挥官名震天下"
+                    }else{
+                        unametest.innerHTML="天下尚无此名号"
+                    }
+                }
+            }
+            xhr.open("get","/user/v1/detail",true);
+            xhr.send();
+        }
+        function login(){
+            var $uname=uname.value;
+            var $upwd=upwd.value;
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4&&xhr.status==200){
+                    var result=xhr.responseText;
+                    if(result="1"){
+                        alert("登陆成功")
+                    }else{
+                        alert("用户名或密码错误")
+                    }
+                }
+            }
+            xhr.open("get","/user/v1/login/"+$uname+"&"+$upwd,true);
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

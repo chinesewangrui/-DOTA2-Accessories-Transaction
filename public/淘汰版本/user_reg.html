@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <!--先导css-->
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <title>英雄降临之地</title>
+    <style>
+        .bg_reg{
+            width:100%;
+            height:50rem;
+            background:url(../img/bg3.png) no-repeat scroll 100%;
+            background-size:cover;
+        }
+        .bg-reg{
+            width:30%;
+            height:55%;
+            position:absolute;
+            top:30%;left:60%;
+            background-image:linear-gradient(to right,rgba(255,0,0,0.9) 0%,rgba(255,165,0,0.8) 10%,rgba(255,255,0,0.7) 20%,rgba(0,255,0,0.6) 40%,rgba(0,255,255,0.5) 60%,rgba(0,0,255,0.4) 80%,rgba(139,0,255,0.3) 100%)
+        }
+        .bgblack{
+            background-color: #25292c;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <header class="row bg-light pt-4 ">
+        <div class="col-6 offset-2">
+            <div class="row">
+                <div class="col-2">
+                    <img src="../img/logo1.png" alt=""/>
+                </div>
+                <div class="col-4 px-0">
+                    <p class="text-danger">刀友圈 <br/>Doter World</p>
+                </div>
+                <p class=" text-primary col-6 h2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天辉&nbsp;&nbsp;夜魇&nbsp;&nbsp;，谁主沉浮</p>
+            </div>
+        </div>
+    </header>
+    <section class="bg_reg">
+        <div class="bg-reg">
+            <div class="clearfix">
+                <p class="float-left h3 text-light pt-4 pl-4">英雄降临</p>
+                <a href="#" class="float-right text-light pt-4 pr-4">王者归来</a>
+            </div>
+            <hr/>
+            <div class="my-2 row">
+                <label for="uname" class="col-3 pl-5 pr-0 pt-1">英雄名号：</label>
+                <input type="text" id="uname" class="form-control f col-5" placeholder="请输入您的英雄称号"/>
+                <span id="suname" class="col-4 text-danger pt-1"></span>
+            </div>
+            <div class="my-2 row">
+                <label for="upwd1" class="col-3 pl-5 pr-0 pt-1">英雄密文：</label>
+                <input type="password" id="upwd1" class="form-control  col-5" placeholder="请输入您的英雄密码"/>
+                <span id="supwd1" class="col-4 text-danger pt-1"></span>
+            </div>
+            <div class="my-2 row">
+                <label for="upwd2" class="col-3 pl-5 pr-0 pt-1">密文确认：</label>
+                <input type="password" id="upwd2" class="form-control col-5" placeholder="请再次输入您的英雄密码"/>
+                <span id="supwd2" class="col-4 text-danger pt-1"></span>
+            </div>
+            <div class="my-2 row">
+                <label for="email" class="col-3 pl-5 pr-0 pt-1">鸿雁传书：</label>
+                <input type="text" id="email" class="form-control  col-5" placeholder="请输入您的邮箱地址"/>
+                <span id="semail" class="col-4 text-danger pt-1"></span>
+            </div>
+            <div class="my-2 row">
+                <label for="phone" class="col-3 pl-5 pr-0 pt-1">千里传音：</label>
+                <input type="text" id="phone" class="form-control  col-5" placeholder="请输入您的联系电话"/>
+                <span id="sphone" class="col-4 text-danger pt-1"></span>
+            </div>
+            <div class="my-2 row">
+                <label for="user_name" class="col-3 pl-5 pr-0 pt-1">英雄真名：</label>
+                <input type="text" id="user_name" class="form-control  col-5" placeholder="请输入您的真实姓名"/>
+            </div>
+            <div>
+                <span class="pl-3 pr-0 pt-1">英雄岂分男女：</span>
+                <input type="radio" name="gender" id="boy"/><label for="boy">须眉</label>
+                <input type="radio" name="gender" id="girl"/><label for="girl">巾帼</label>
+                <input type="radio" name="gender" id="unknown" checked/><label for="unknown">保密</label>
+            </div>
+            <div class="text-center">
+            <a href="#" class="btn btn-primary w-75 my-3 "><h4>名  传 天 下</h4></a>
+            </div>
+        </div>
+    </section>
+    <footer class="bgblack  pb-5">
+        <!--底部part1-->
+        <div class="d-flex flex-row justify-content-center pt-5 pb-2">
+            <div class="mx-5 text-center">
+                <img src="../img/footer/footer1.PNG" alt="" class=""/>
+                <h4 class="text-white my-3">VIP会员服务</h4>
+                <p class="text-secondary">专享0元网络服务器</p>
+            </div>
+            <div class="mx-5 text-center">
+                <img src="../img/footer/footer2.PNG" alt=""/>
+                <h4 class="text-white my-3">团购优惠</h4>
+                <p class="text-secondary">特有团购享更多实惠</p>
+            </div>
+            <div class="mx-5 text-center">
+                <img src="../img/footer/footer3.PNG" alt=""/>
+                <h4 class="text-white my-3">安全便捷</h4>
+                <p class="text-secondary">买家首发无需存入取回</p>
+            </div>
+            <div class="mx-5 text-center">
+                <img src="../img/footer/footer4.PNG" alt=""/>
+                <h4 class="text-white my-3">专属客服</h4>
+                <p class="text-secondary">7*24小时专有服务</p>
+            </div>
+        </div>
+        <hr/>
+        <!--底部part1  提示信息-->
+        <div class="d-flex flex-row justify-content-center pt-3 ">
+            <div class="text-center px-5">
+                <h6 class="text-white">新手入门</h6>
+                <a href="#" class="d-block text-secondary">使用指南</a>
+                <a href="#" class="d-block text-secondary">STEAM相关</a>
+                <a href="#" class="d-block text-secondary">交易防骗说明</a>
+            </div>
+            <div class="text-center px-5">
+                <h6 class="text-white">买卖交易</h6>
+                <a href="#" class="d-block text-secondary">上架发布</a>
+                <a href="#" class="d-block text-secondary">下单购买</a>
+                <a href="#" class="d-block text-secondary">团购交易</a>
+            </div>
+            <div class="text-center px-5">
+                <h6 class="text-white">钱包相关</h6>
+                <a href="#" class="d-block text-secondary">网络服务费标准</a>
+                <a href="#" class="d-block text-secondary">充值提现</a>
+            </div>
+            <div class="text-center px-5">
+                <h6 class="text-white">支付方式</h6>
+                <a href="#" class="d-block text-secondary">微信</a>
+                <a href="#" class="d-block text-secondary">银联</a>
+            </div>
+            <div class="text-center px-5">
+                <h6 class="text-white">公众号</h6>
+                <img src="../img/footer/gzh.PNG" alt=""/>
+            </div>
+        </div>
+        <!--底部part3-->
+        <div class="d-flex flex-row justify-content-center">
+            <p class="px-3">
+                <a href="#" class="text-secondary">关于我们</a>
+            </p>
+            <p class="px-3">
+                <a href="#" class="text-secondary">商务合作</a>
+            </p>
+            <p class="px-3">
+                <a href="#" class="text-secondary">家长监护</a>
+            </p>
+            <p class="px-3">
+                <a href="#" class="text-secondary">用户协议</a>
+            </p>
+            <p class="px-3">
+                <a href="#" class="text-secondary">隐私政策</a>
+            </p>
+        </div>
+        <!--底部part3-->
+        <div class="text-center text-secondary pb-5">
+            Copyright©2019 Dote2云网友娱乐中心  Doter小世界
+        </div>
+    </footer>
+</div>
+</body>
+</html>

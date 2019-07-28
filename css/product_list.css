@@ -1,0 +1,36 @@
+.bg_grey{
+    background-image:linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+}
+.my_font20{
+    font-size:20px;
+}
+.my_img_trans{
+    transition:all 1s;
+}
+.my_img_trans:hover{
+    transform:scale(1.1)
+}
+.w-10{width:10%}
+.my_input_outline{
+    outline:0
+}
+.my_font18{
+    font-size:18px;
+    color:#333;
+}
+.my_font18:hover{
+    text-decoration: none;
+    color:#ef7c01;
+}
+.pagination li+li{
+    margin-left:0.5rem
+}
+.my_list_border{
+    border:10px solid #c5c7d3
+}
+.my_div{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 8px;
+}
