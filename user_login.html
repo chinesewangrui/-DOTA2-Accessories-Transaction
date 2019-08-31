@@ -1,98 +1,54 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/login.css">
-        <script>
-            var $uname=uname.value;
-            var $upwd=upwd.value;
-            function un(){
-                if(!$uname){
-                    s1.innerHTML="用户名不能为空"
-                    return;
-                }
-            }
-            function up(){
-                if(!upwd){
-                    s2.innerHTML="密码不能为空"
-                    return;
-                }
-            }
-            function userlogin(){
-                var xhr=new XMLHttpRequest();
-                xhr.onreadystatechange=function(){
-                    if(xhr.readyState==4&&xhr.status==200){
-                        result=xhr.responseText;
-                        if(result=="1"){
-                            alert("登录成功")
-                        }else{
-                            alert("登陆失败")
-                        }
-                    }
-                }
-                xhr.open("get","/user/v1/login/"+$uname+"&"+$upwd,true);
-                xhr.send();
-            }
-        </script>
-    </head>
-    <body>
-        <div class="content">
-            <table></table>
-            <div class="black">
-                <table>
-                    <tr>
-                        <td>
-                            <h3>欢迎回家</h3>
-                        </td>
-                        <td align="right">
-                            <a href="user_reg.html">新用户注册</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><hr></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="text" id="uname" onblur="un()" placeholder="请输入您的用户名">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <span id="s1"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="text" id="upwd" onblur="up()" placeholder="请输入您的密码">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <span id="s2"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" id="lab"><label for="lab">自动登录</label>
-                        </td>
-                        <td align="right">  
-                            <a href="">忘记密码？</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <button id="btn" onclick="userlogin()">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>用户登录</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/comm.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+  <body>
+    <header id="header"></header>
+    <!-- 页面主体 --> 
+    <main class="container-fluid" id="main">
+        <!--登录界面-->
+        <section id="login">
+                <div id="loginview">
+                    <div class="row p-0 pl-3">
+                        <h3 class="col-7 text-light text-left pt-3 ">欢迎指挥官</h3>
+                        <a href="user_reg.html" title="新用户注册"  class="col-5 h5 text-danger text-center pt-4 ">英雄降临</a>
+                    </div>
+                    <form action="" class="form-inline text-center">
+                        <input type="text" id="uname" placeholder="请输入您的名号" onblur="getUname()" class="form-control col-form-label form-text ml-4 w-75"/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/index/yhm.png" alt=""/>
+                    </form>
+                    <p id="unametest"></p>
+                    <form action="" class="form-inline ">
+                        <input type="password" id="upwd" placeholder="请输入您的密码" class="form-control col-form-label form-text ml-4 w-75"/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/index/mm.png" alt=""/>
+                    </form>
+                    <form action="" class="mt-4 form-check">
+                        <input type="checkbox" class=" float-check-input mr-1 " id="zdlogin"/><label for="zdlogin" class="text-light">自动登录</label>
+                        <a href="#" class="float-right mr-4 text-light">忘记密码?</a>
+                    </form>
+                    <div class="text-center">
+                        <a  class="btn btn-primary  w-75 mt-4">登&nbsp;&nbsp;&nbsp;录</a>
+                    </div>
+                </div>
+            </section>    
+    </main>
+    <header id="footer"></header>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
 </html>

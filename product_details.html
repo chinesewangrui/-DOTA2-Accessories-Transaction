@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>饰品详情</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/comm.css">
+  </head>
+  <body>
+    <header id="header"></header>
+    <!-- 页面主体 -->
+    <main id="main" class="container"> 
+        <img src="img/index/bg2.jpg" alt="" class="w-100 h-75 mb-2">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb small bg-transparent">
+                <li class="breadcrumb-item"><a class="text-dark font-weight-bold " href="#">首页</a></li>
+                <li class="breadcrumb-item"><a class="text-dark font-weight-bold " href="#">饰品市场</a></li>
+                <li class="breadcrumb-item text-dark font-weight-bold  active" >铭刻 噬魔之王</li>
+              </ol>
+            </nav>
+            <div class="container mb-5">
+              <div class="row pr-3">
+                <div id="preview" class="col-6 pr-0">
+                  <div class="card bg-transparent mr-5 position-absolute">
+                    <img class="card-img-top h-50" src="img/newproduct/007.png" alt="Card image cap" id="mImg">
+                    <div id="mask" class="position-absolute d-none"></div>
+                    <div id="super-mask" class="position-absolute"></div>
+                    <div id="div-lg" class="position-absolute d-none"></div>
+                    <div class="card-body p-0 text-center">
+                      <img src="img/newproduct/007.png" class="btn float-left btn-light border-0 p-1  pb-4 w-25 disabled" id="btnLeft">
+                      <img src="img/newproduct/007.png" class="btn float-right btn-light border-0 p-1  pb-4 w-25"  id="btnRight">
+                    </div>
+                  </div>
+                </div>
+                <div id="details" class="col-6 pl-0">
+                  <h3 id="ptitle" class="font-weight-bold">
+                    稀有饰品 影魔至宝
+                  </h3>
+                  <h4>
+                    <a class="small text-dark font-weight-bold" href="javascript:;"  id="p_sub_title">助力Ti9，现在购买八折优惠</a>
+                  </h4>
+                  <div class="alert alert-secondary small" role="alert">
+                    <div>
+                      <span>水友售价：</span>
+                      <h2 class="d-inline text-primary font-weight-bold"  id="pprice">¥135.00</h2>
+                    </div>
+                    <div>
+                      <span>服务承诺：</span>
+                      <span  id="ppromise">*货真价实 *即买即发 *保证质量 </span>
+                    </div>
+                  </div>
+                  <!-- 客服 -->
+                  <p class="mb-1">
+                    <span class="small">客服：</span>
+                    <span class="small">联系客服</span>
+                    <img src="img/index/kefuf.gif" alt="">
+                  </p>
+                  <!-- 规格 -->
+                  <div>
+                    <div class="float-left small">规格：</div>
+                    <div class="float-left w-75" id="specs">
+                      <a class="btn btn-sm btn-outline-secondary active" href="#1">LGD加油！CN DOTA, BEST DOTA!</a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <!-- 数量 -->
+                  <div class="mt-2">
+                    <div class="float-left small">数量：</div>
+                    <div class="input-group mb-3 w-25">
+                      <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary p-1" type="button">-</button>
+                      </div>
+                      <input type="text" value="1" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary p-1" type="button">+</button>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <!-- 购买部分 -->
+                  <div>
+                    <a class="btn pt-3 pb-2 pl-5 pr-5 btn-primary" href="javascript:;"><h5>立即购买</h5></a>
+                    <a class="btn btn-primary pt-3" href="javascript:;">
+                      <h5><img src="img/index/foodstore_car_2.png" alt=""> 加入购物车</h5>
+                    </a>
+                    <a class="btn btn-primary pt-1 pb-1 collection" href="javascript:;">
+                      <img src="img/index/product_detail_img6.png">
+                      <br>
+                      收藏
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav class="navbar flex-md-nowrap p-0 mt-5 bg-dark rounded-0">
+              <form class="form-inline pl-2">
+                <button class="btn bg-transparent rounded-0 pt-2 pb-2 text-info" type="button"><h5>商品详情</h5></button>
+                <button class="btn bg-transparent rounded-0 pt-2 pb-2 text-info" type="button"><h5>商品评价</h5></button>
+              </form>
+            </nav>
+    </main>
+    <header id="footer"></header>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,11 @@
+/*定义主导航当前导航项的字体颜色*/
+#header>.nav .nav-link.active,
+#header>.nav .nav-link:hover{
+    font-weight:bold;
+    background-color:#0aa;
+    border-bottom:1px solid #f00;
+}
+#header .breadcrumb-item + .breadcrumb-item::before {
+    content: "|";
+    align-items: center;
+}

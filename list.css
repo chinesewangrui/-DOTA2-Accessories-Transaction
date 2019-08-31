@@ -1,0 +1,46 @@
+#list .bg_grey{
+    background-image:linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+}
+#list .my_font20{
+    font-size:20px;
+}
+#list .my_img_trans{
+    transition:all 1s;
+}
+#list .my_img_trans:hover{
+    transform:scale(1.1)
+}
+#list .w-10{width:10%}
+#list .my_input_outline{
+    outline:0
+}
+#list .my_font18{
+    font-size:18px;
+    color:#333;
+}
+#list .my_font18:hover{
+    text-decoration: none;
+    color:#ef7c01;
+}
+#list .pagination li+li{
+    margin-left:0.5rem
+}
+#list .my_list_border{
+    border:10px solid #c5c7d3
+}
+#list .my_div{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 8px;
+}
+#list .my_border{
+    background: #333
+}
+#list .hide{
+    display:none
+}
+#heros img:hover{
+    transform: scale(1.2);
+    transition: all .5s linear;
+}
